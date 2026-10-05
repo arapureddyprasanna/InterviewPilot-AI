@@ -1,0 +1,272 @@
+.activity-page {
+  min-height: 100vh;
+  background: #c9ebe0;
+  color: #162522;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.activity-topbar {
+  max-width: 1200px;
+  margin: 0 auto 28px;
+}
+
+.activity-back-button {
+  border: none;
+  background: transparent;
+  color: #145046;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.activity-back-button:hover {
+  color: #fbfbfb;
+  background: #29322f8b;
+}
+
+.activity-heading {
+  background: #ffffff;
+  border: 1px solid #e3ece9;
+  border-radius: 20px;
+  padding: 28px 30px;
+  box-shadow: 0 8px 28px rgba(25, 55, 48, 0.06);
+}
+
+.activity-eyebrow {
+  display: block;
+  color: #467567;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.activity-heading h1 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.activity-heading p {
+  margin: 8px 0 0;
+  color: #71817d;
+  font-size: 14px;
+}
+
+.activity-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity-card {
+  background: #ffffff;
+  border: 1px solid #e5ecea;
+  border-radius: 16px;
+  padding: 17px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 5px 18px rgba(25, 55, 48, 0.182);
+  transition: 0.2s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(25, 55, 48, 0.424);
+}
+
+.activity-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+
+.activity-icon {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.interview-icon {
+  background: #c2f1dd;
+  color: #266755;
+}
+
+.coding-icon {
+  background: #98b0dabe;
+  color: #224474;
+}
+
+.activity-details {
+  min-width: 0;
+}
+
+.activity-details h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: #1b302b;
+}
+
+.activity-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.activity-meta span {
+  background: #f4f7f6;
+  color: #687975;
+  border-radius: 7px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.activity-date {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #899692;
+  font-size: 11px;
+}
+
+.activity-score {
+  min-width: 82px;
+  text-align: center;
+}
+
+.activity-score-circle {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+}
+
+.activity-score-circle strong {
+  font-size: 22px;
+  color: #203b34;
+}
+
+.activity-score-circle span {
+  font-size: 11px;
+  color: #8b9895;
+}
+
+.activity-score small {
+  display: block;
+  margin-top: 3px;
+  color: #84918e;
+  font-size: 10px;
+}
+
+.activity-state {
+  background: #ffffff;
+  border: 1px solid #e4ece9;
+  border-radius: 20px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 8px 28px rgba(25, 55, 48, 0.05);
+}
+
+.activity-state p {
+  color: #75837f;
+  font-size: 14px;
+}
+
+.activity-empty-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #eef5f2;
+  color: #4d776c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.activity-state h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.activity-practice-button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  background: #203f37;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.activity-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #dce7e4;
+  border-top-color: #4d776c;
+  border-radius: 50%;
+  animation: activitySpin 0.8s linear infinite;
+}
+
+@keyframes activitySpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .activity-page {
+    padding: 18px;
+  }
+
+  .activity-heading {
+    padding: 22px;
+  }
+
+  .activity-heading h1 {
+    font-size: 25px;
+  }
+
+  .activity-card {
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .activity-score {
+    min-width: 65px;
+  }
+
+  .activity-score-circle strong {
+    font-size: 19px;
+  }
+
+  .activity-meta {
+    gap: 5px;
+  }
+}

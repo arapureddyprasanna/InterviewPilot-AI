@@ -1,0 +1,744 @@
+/* =========================================================
+   INTERVIEWPILOT - RESUME ANALYSIS
+   ========================================================= */
+
+.analysis-page {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    padding: 48px 32px 70px;
+
+    background:
+        radial-gradient(
+            circle at 85% 5%,
+            rgba(42, 171, 143, 0.08),
+            transparent 28%
+        ),
+        #f7fbf9;
+
+    color: #24332f;
+}
+
+
+/* =========================================================
+   CONTENT WIDTH
+   ========================================================= */
+
+.analysis-header,
+.summary-card,
+.section,
+.interview-card {
+    width: 100%;
+    max-width: 1120px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.analysis-header {
+    margin-bottom: 34px;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 6px 10px;
+
+    border-radius: 7px;
+
+    background: #e4f6f0;
+    color: #168f7a;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.analysis-header h1 {
+    margin: 14px 0 10px;
+
+    color: #1f302b;
+
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+}
+
+.analysis-header p {
+    max-width: 720px;
+
+    margin: 0;
+
+    color: #70817c;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.card-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #168f7a;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.summary-card {
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 30px;
+
+    margin-bottom: 44px;
+    padding: 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #e0ebe7;
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 28px rgba(33, 74, 64, 0.05);
+}
+
+.candidate-level {
+    padding-right: 24px;
+
+    border-right: 1px solid #e5eeeb;
+}
+
+.summary-card h2 {
+    margin: 0;
+
+    color: #1d3931;
+
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.summary-card p {
+    margin: 0;
+
+    color: #667872;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.section {
+    margin-bottom: 46px;
+}
+
+.section h2 {
+    margin: 0 0 20px;
+
+    color: #24352f;
+
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   ROLE GRID
+   ========================================================= */
+
+.role-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+.role-card {
+    width: 100%;
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    padding: 19px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1ebe8;
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 18px rgba(32, 74, 64, 0.035);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.role-card:hover {
+    transform: translateY(-2px);
+
+    border-color: #c6e3da;
+
+    box-shadow:
+        0 10px 25px rgba(32, 74, 64, 0.07);
+}
+
+
+/* =========================================================
+   ROLE HEADER
+   ========================================================= */
+
+.role-header {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 18px;
+}
+
+.role-header h3 {
+    margin: 0 0 6px;
+
+    color: #263a34;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.role-header p {
+    margin: 0;
+
+    color: #71817c;
+
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.role-header strong {
+    flex-shrink: 0;
+
+    color: #168f7a;
+
+    font-size: 21px;
+}
+
+
+/* =========================================================
+   MATCH BAR
+   ========================================================= */
+
+.progress-track {
+    width: 100%;
+    height: 6px;
+
+    margin: 15px 0 13px;
+
+    background: #eaf2ef;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #36b69b,
+        #168f7a
+    );
+
+    border-radius: inherit;
+}
+
+
+/* =========================================================
+   MISSING SKILLS
+   ========================================================= */
+
+.missing-skills > span:first-child {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #8a6b25;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.missing-skills > div {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5px;
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skills-list {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+.skill-tag,
+.skill-pill {
+    display: inline-flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 7px 11px;
+
+    background: #edf8f4;
+
+    color: #187d6c;
+
+    border: 1px solid #d4ebe4;
+    border-radius: 8px;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.skill-pill {
+    padding: 8px 12px;
+
+    border-radius: 9px;
+
+    font-size: 11px;
+}
+
+/* =========================================================
+   INTERVIEW PLAN
+   ========================================================= */
+
+.interview-card {
+    width: 100%;
+    max-width: 1120px;
+    box-sizing: border-box;
+
+    padding: 26px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f0faf7 0%,
+            #ffffff 60%
+        );
+
+    border: 1px solid #cfe6df;
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(31, 92, 78, 0.06);
+}
+
+
+/* =========================================================
+   INTERVIEW HEADER
+   ========================================================= */
+
+.interview-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.interview-header > div:first-child {
+    flex: 1;
+    min-width: 0;
+}
+
+.interview-header h2 {
+    margin: 0 0 8px;
+    color: #203b34;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.interview-header p {
+    max-width: 650px;
+    margin: 0;
+    color: #6b7d77;
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   DIFFICULTY
+   ========================================================= */
+
+.difficulty-badge {
+    flex-shrink: 0;
+
+    padding: 7px 11px;
+
+    background: #e6f6f1;
+    color: #168f7a;
+
+    border: 1px solid #cfe9e1;
+    border-radius: 8px;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.focus-section {
+    width: 100%;
+    margin: 24px 0;
+    padding-top: 20px;
+
+    border-top: 1px solid #dfece8;
+}
+
+.focus-section h3 {
+    margin: 0 0 11px;
+    color: #344740;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   QUESTIONS
+   ========================================================= */
+
+.interview-card .question-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* EACH QUESTION = FULL WIDTH */
+
+.interview-card .question-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 15px 17px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1ece9;
+    border-radius: 11px;
+}
+
+
+/* QUESTION NUMBER */
+
+.interview-card .question-number {
+    flex: 0 0 36px;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f7f2;
+    color: #168f7a;
+
+    border-radius: 8px;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+/* QUESTION TEXT */
+
+.interview-card .question-card > div:last-child {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+.interview-card .question-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5px;
+    margin-bottom: 6px;
+}
+
+.interview-card .question-meta span {
+    padding: 4px 7px;
+
+    background: #f0f5f3;
+    color: #687a74;
+
+    border-radius: 5px;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.interview-card .question-card h3 {
+    margin: 0 0 5px;
+
+    color: #30423c;
+
+    font-size: 12px;
+    font-weight: 750;
+    line-height: 1.55;
+}
+
+.interview-card .question-card p {
+    margin: 0;
+
+    color: #899791;
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   START AI INTERVIEW
+   ========================================================= */
+
+.interview-card .start-interview-button {
+    display: inline-flex;
+
+    width: auto !important;
+    max-width: max-content;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 23px;
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #168f7a;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .analysis-page {
+        padding: 40px 24px 60px;
+    }
+
+    .role-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .analysis-page {
+        padding: 28px 16px 50px;
+    }
+
+    .analysis-header {
+        margin-bottom: 26px;
+    }
+
+    .analysis-header h1 {
+        font-size: 30px;
+    }
+
+    .analysis-header p {
+        font-size: 12px;
+    }
+
+
+    /* SUMMARY */
+
+    .summary-card {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        padding: 18px;
+
+        margin-bottom: 34px;
+    }
+
+    .candidate-level {
+        padding-right: 0;
+        padding-bottom: 17px;
+
+        border-right: none;
+        border-bottom: 1px solid #e5eeeb;
+    }
+
+
+    /* SECTION */
+
+    .section {
+        margin-bottom: 36px;
+    }
+
+    .section h2 {
+        font-size: 21px;
+    }
+
+
+    /* ROLE */
+
+    .role-card {
+        padding: 16px;
+    }
+
+
+    /* INTERVIEW */
+
+    .interview-card {
+        padding: 18px;
+
+        border-radius: 15px;
+    }
+
+    .interview-header {
+        flex-direction: column;
+
+        gap: 13px;
+    }
+
+    .interview-header h2 {
+        font-size: 21px;
+    }
+
+    .difficulty-badge {
+        align-self: flex-start;
+    }
+
+
+    /* QUESTIONS */
+
+    .question-card {
+        padding: 12px;
+
+        gap: 10px;
+    }
+
+    .question-number {
+        flex-basis: 28px;
+
+        width: 28px;
+        height: 28px;
+    }
+
+    .question-card h3 {
+        font-size: 11px;
+    }
+
+
+    /* BUTTON */
+
+    .start-interview-button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .analysis-page {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .analysis-header h1 {
+        font-size: 27px;
+    }
+
+    .summary-card,
+    .interview-card {
+        padding: 15px;
+    }
+
+    .role-header {
+        flex-direction: column;
+    }
+
+    .role-header strong {
+        align-self: flex-start;
+    }
+}

@@ -1,0 +1,682 @@
+/* =========================================================
+   INTERVIEWPILOT INTERVIEW SETUP
+   ========================================================= */
+
+.interview-setup-page {
+  min-height: 100vh;
+  background: #f7fbfa;
+  color: #152522;
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.interview-setup-header {
+  width: min(1240px, calc(100% - 60px));
+  margin: 0 auto;
+  padding: 26px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.setup-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.setup-brand-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #c9f4e5;
+  color: #17634d;
+}
+
+.setup-back-button {
+  border: 0;
+  background: transparent;
+  color: #526660;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 9px 12px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.setup-back-button:hover {
+  background: #eaf6f1;
+  color: #17634d;
+}
+
+.setup-header-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #61716c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #43b98d;
+  box-shadow: 0 0 0 4px #dff6ec;
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.interview-setup-main {
+  width: min(1000px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 45px 0 60px;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.setup-hero {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 38px;
+}
+
+.setup-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 13px;
+  border-radius: 999px;
+  background: #e4f8f0;
+  color: #17634d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.setup-hero h1 {
+  margin: 18px 0 13px;
+  font-size: clamp(40px, 5vw, 62px);
+  line-height: 1;
+  letter-spacing: -2.8px;
+  font-weight: 850;
+}
+
+.setup-hero h1 span {
+  color: #39a982;
+}
+
+.setup-hero p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #667771;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.interview-setup-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #dcebe5;
+  border-radius: 26px;
+  padding: 34px;
+  box-shadow:
+    0 25px 70px rgba(30, 74, 62, 0.08),
+    0 4px 15px rgba(30, 74, 62, 0.04);
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.setup-section {
+  width: 100%;
+}
+
+.setup-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.setup-section-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #e4f8f0;
+  color: #248365;
+}
+
+.setup-section-heading h2 {
+  margin: 0 0 4px;
+  font-size: 19px;
+  letter-spacing: -0.4px;
+}
+
+.setup-section-heading p {
+  margin: 0;
+  color: #7a8984;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   ROLE SEARCH
+   ========================================================= */
+
+.role-search-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.role-search-wrapper input {
+  width: 100%;
+  height: 54px;
+  box-sizing: border-box;
+  padding: 0 18px 0 48px;
+  border: 1px solid #d8e6e1;
+  border-radius: 14px;
+  outline: none;
+  background: #fbfdfc;
+  color: #152522;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.role-search-wrapper input::placeholder {
+  color: #9aa8a4;
+}
+
+.role-search-wrapper input:focus {
+  border-color: #58b99a;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(88, 185, 154, 0.12);
+}
+
+.role-search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8b9a95;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   ROLE CHIPS
+   ========================================================= */
+
+.role-group-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 12px;
+  color: #596b65;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.role-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.role-chip {
+  border: 1px solid #dce9e4;
+  background: #f9fcfb;
+  color: #3e514b;
+  border-radius: 11px;
+  padding: 10px 13px;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: 0.2s ease;
+}
+
+.role-chip:hover {
+  border-color: #70c6a7;
+  background: #eefaf5;
+  color: #17634d;
+  transform: translateY(-1px);
+}
+
+.role-chip.selected {
+  border-color: #43ad88;
+  background: #e1f7ee;
+  color: #17634d;
+}
+
+.role-check {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.no-role-message {
+  margin: 4px 0 0;
+  color: #7d8b87;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   RECOMMENDED ROLES
+   ========================================================= */
+
+.recommended-section {
+  margin-top: 28px;
+}
+
+.recommended-list {
+  display: grid;
+  gap: 10px;
+}
+
+.recommended-role {
+  width: 100%;
+  border: 1px solid #dce9e4;
+  background: #fbfdfc;
+  border-radius: 14px;
+  padding: 13px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.recommended-role:hover {
+  border-color: #70c6a7;
+  background: #f2fbf7;
+  transform: translateY(-1px);
+}
+
+.recommended-role.selected {
+  border-color: #43ad88;
+  background: #e7f8f1;
+}
+
+.recommended-role-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.recommended-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #dff6ec;
+  color: #2a9a75;
+  font-size: 12px;
+}
+
+.recommended-role strong {
+  display: block;
+  color: #263b35;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.recommended-role span {
+  display: block;
+  color: #82908b;
+  font-size: 11px;
+}
+
+.match-percentage {
+  color: #218461;
+  font-size: 14px;
+  font-weight: 850;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.setup-divider {
+  height: 1px;
+  background: #e7efec;
+  margin: 34px 0;
+}
+
+
+/* =========================================================
+   OPTIONS
+   ========================================================= */
+
+.option-group {
+  margin-top: 26px;
+}
+
+.option-group > label {
+  display: block;
+  margin-bottom: 11px;
+  color: #43564f;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+}
+
+.option-card {
+  position: relative;
+  min-height: 88px;
+  padding: 17px;
+  text-align: left;
+  border: 1px solid #dce9e4;
+  border-radius: 14px;
+  background: #fbfdfc;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.option-card:hover {
+  border-color: #70c6a7;
+  background: #f3fbf7;
+  transform: translateY(-1px);
+}
+
+.option-card.selected {
+  border-color: #43ad88;
+  background: #e5f8f0;
+  box-shadow: inset 0 0 0 1px rgba(67, 173, 136, 0.15);
+}
+
+.option-card-title {
+  display: block;
+  margin-bottom: 6px;
+  color: #253b34;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.option-card-description {
+  display: block;
+  max-width: 150px;
+  color: #7a8984;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.option-check {
+  position: absolute;
+  top: 12px;
+  right: 13px;
+  color: #258b68;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   ACTION
+   ========================================================= */
+
+.setup-action {
+  margin-top: 34px;
+  padding-top: 24px;
+  border-top: 1px solid #e7efec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.setup-summary span {
+  display: block;
+  margin-bottom: 5px;
+  color: #87938f;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+}
+
+.setup-summary strong {
+  color: #263b35;
+  font-size: 15px;
+}
+
+.setup-primary-button {
+  min-height: 50px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 13px;
+  background: #183b31;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.setup-primary-button:hover {
+  background: #267b61;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(24, 59, 49, 0.16);
+}
+
+.setup-primary-button svg {
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   FOOT NOTE
+   ========================================================= */
+
+.setup-footer-note {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #7d8b87;
+  font-size: 12px;
+}
+
+.setup-footer-note svg {
+  color: #4eaf8c;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .interview-setup-header {
+    width: calc(100% - 36px);
+  }
+
+  .interview-setup-main {
+    width: calc(100% - 30px);
+    padding-top: 30px;
+  }
+
+  .interview-setup-card {
+    padding: 25px;
+  }
+
+  .setup-header-status {
+    display: none;
+  }
+
+  .option-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+
+  .interview-setup-header {
+    padding: 18px 0;
+  }
+
+  .setup-brand {
+    font-size: 17px;
+  }
+
+  .setup-brand-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .setup-back-button span {
+    display: none;
+  }
+
+  .setup-back-button {
+    padding: 8px;
+  }
+
+  .interview-setup-main {
+    width: calc(100% - 22px);
+    padding: 25px 0 40px;
+  }
+
+  .setup-hero {
+    margin-bottom: 27px;
+  }
+
+  .setup-hero h1 {
+    font-size: 40px;
+    letter-spacing: -1.8px;
+  }
+
+  .setup-hero p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .interview-setup-card {
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+
+  .setup-section-heading {
+    gap: 11px;
+  }
+
+  .setup-section-icon {
+    width: 39px;
+    height: 39px;
+  }
+
+  .setup-section-heading h2 {
+    font-size: 17px;
+  }
+
+  .role-list {
+    gap: 7px;
+  }
+
+  .role-chip {
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+
+  .recommended-role {
+    padding: 12px;
+  }
+
+  .setup-action {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .setup-summary {
+    text-align: center;
+  }
+
+  .setup-primary-button {
+    width: 100%;
+  }
+
+  .setup-footer-note {
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+  .setup-hero h1 {
+    font-size: 35px;
+  }
+
+  .interview-setup-card {
+    padding: 17px 13px;
+  }
+
+  .role-chip {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+}

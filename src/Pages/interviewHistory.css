@@ -1,0 +1,512 @@
+/* =========================================================
+   INTERVIEW HISTORY
+   ========================================================= */
+
+.history-page {
+  min-height: 100vh;
+  padding: 36px 6%;
+  box-sizing: border-box;
+  background:
+    radial-gradient(
+      circle at 5% 0%,
+      rgba(63, 178, 132, .10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 95% 5%,
+      rgba(25, 92, 69, .08),
+      transparent 28%
+    ),
+    #f4f8f6;
+  color: #17352b;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.history-header {
+  max-width: 1250px;
+  margin: 0 auto 38px;
+}
+
+.back-button {
+  border: 1px solid #d8e7e0;
+  background: #fff;
+  color: #285c49;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.back-button:hover {
+  background: #f1f8f5;
+}
+
+.history-heading {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.heading-icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    #194d3b,
+    #28765a
+  );
+  color: #e2f8ed;
+  font-size: 21px;
+  box-shadow:
+    0 12px 28px rgba(25, 92, 69, .18);
+}
+
+.history-heading h1 {
+  margin: 0;
+  font-size: 31px;
+  letter-spacing: -.03em;
+}
+
+.history-heading p {
+  margin: 6px 0 0;
+  color: #75877f;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.history-stats {
+  max-width: 1250px;
+  margin: 0 auto 36px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #dfeae5;
+  border-radius: 18px;
+  padding: 21px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow:
+    0 10px 28px rgba(27, 74, 57, .055);
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #e9f7f0;
+  color: #28765a;
+}
+
+.stat-card span {
+  display: block;
+  color: #6f8c80;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.stat-card strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 23px;
+  color: #17352b;
+}
+
+
+/* =========================================================
+   INTERVIEW LIST
+   ========================================================= */
+
+.interview-list {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 21px;
+  letter-spacing: -.02em;
+}
+
+.section-title span {
+  padding: 7px 11px;
+  border-radius: 20px;
+  background: #e9f7f0;
+  color: #28765a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   INTERVIEW CARD
+   ========================================================= */
+
+.interview-card {
+  background: #fff;
+  border: 1px solid #dfeae5;
+  border-radius: 20px;
+  padding: 21px 23px;
+  margin-bottom: 13px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 28px;
+  transition: .2s ease;
+  box-shadow:
+    0 8px 24px rgba(27, 74, 57, .04);
+}
+
+.interview-card:hover {
+  transform: translateY(-2px);
+  border-color: #c9ded5;
+  box-shadow:
+    0 14px 32px rgba(27, 74, 57, .08);
+}
+
+.interview-main {
+  min-width: 0;
+}
+
+.interview-title {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.role-avatar {
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #e9f7f0;
+  color: #28765a;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.interview-title h3 {
+  margin: 0;
+  font-size: 17px;
+  color: #17352b;
+}
+
+.interview-title p {
+  margin: 4px 0 0;
+  color: #7b8d85;
+  font-size: 12px;
+}
+
+.interview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 13px;
+  color: #7c8d86;
+  font-size: 12px;
+}
+
+.interview-meta strong {
+  color: #426457;
+}
+
+
+/* =========================================================
+   SCORE
+   ========================================================= */
+
+.score-section {
+  min-width: 105px;
+  text-align: center;
+}
+
+.score-circle {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f7faf8;
+  border: 5px solid #dce9e3;
+}
+
+.score-circle strong {
+  font-size: 21px;
+  color: #17352b;
+}
+
+.score-circle span {
+  font-size: 10px;
+  color: #7d8e87;
+}
+
+.score-excellent {
+  border-color: #42a878;
+}
+
+.score-good {
+  border-color: #9ac56f;
+}
+
+.score-low {
+  border-color: #d99b78;
+}
+
+.score-label {
+  margin-top: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #668176;
+}
+
+
+/* =========================================================
+   REPORT BUTTON
+   ========================================================= */
+
+.report-button-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.view-report-button {
+  border: 1px solid #cfe2d9;
+  background: #f5faf7;
+  color: #285c49;
+  padding: 11px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: .2s ease;
+}
+
+.view-report-button:hover {
+  background: #e7f5ee;
+  border-color: #b5d4c5;
+  transform: translateX(2px);
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.empty-history {
+  max-width: 620px;
+  margin: 75px auto;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #dfeae5;
+  border-radius: 24px;
+  padding: 52px 30px;
+  box-shadow:
+    0 14px 35px rgba(27, 74, 57, .06);
+}
+
+.empty-icon {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 19px;
+  background: #e9f7f0;
+  color: #28765a;
+  font-size: 26px;
+}
+
+.empty-history h2 {
+  margin: 19px 0 8px;
+  font-size: 23px;
+}
+
+.empty-history p {
+  max-width: 430px;
+  margin: 0 auto;
+  color: #788b82;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.empty-history button,
+.history-error button {
+  margin-top: 18px;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #194d3b;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.empty-history button:hover,
+.history-error button:hover {
+  background: #28765a;
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.history-loading {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #70857b;
+}
+
+.loading-spinner {
+  width: 34px;
+  height: 34px;
+  border: 4px solid #dce9e3;
+  border-top-color: #28765a;
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+  margin-bottom: 14px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.history-error {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.history-error h2 {
+  margin-bottom: 5px;
+}
+
+.history-error p {
+  color: #788b82;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .history-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .interview-card {
+    grid-template-columns: 1fr auto;
+  }
+
+  .report-button-section {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .history-page {
+    padding: 25px 5%;
+  }
+
+  .history-heading {
+    align-items: flex-start;
+  }
+
+  .history-heading h1 {
+    font-size: 26px;
+  }
+
+  .history-card {
+    padding: 18px;
+  }
+
+  .interview-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .score-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+  }
+
+  .score-circle {
+    margin: 0;
+  }
+
+  .score-label {
+    margin: 0;
+  }
+
+  .report-button-section {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .view-report-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,564 @@
+/* =========================================================
+   PROGRESS PAGE
+   ========================================================= */
+
+.progress-page {
+  min-height: 100vh;
+  padding: 36px 6%;
+  box-sizing: border-box;
+  background:
+    radial-gradient(circle at 5% 0%, rgba(63, 178, 132, .10), transparent 28%),
+    radial-gradient(circle at 95% 5%, rgba(25, 92, 69, .08), transparent 28%),
+    #f4f8f6;
+  color: #17352b;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.progress-header {
+  max-width: 1250px;
+  margin: 0 auto 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.progress-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.progress-heading-icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #194d3b, #28765a);
+  color: #dff8ec;
+  font-size: 21px;
+  box-shadow: 0 12px 28px rgba(25, 92, 69, .18);
+}
+
+.progress-eyebrow,
+.section-heading span,
+.pillar-header span,
+.pillar-metric span,
+.progress-stat span,
+.mini-section-title span,
+.insight-card span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  color: #60917d;
+}
+
+.progress-header h1 {
+  margin: 4px 0;
+  font-size: 31px;
+  letter-spacing: -.03em;
+}
+
+.progress-header p {
+  margin: 0;
+  color: #72857d;
+  font-size: 14px;
+}
+
+.progress-back-button {
+  border: 1px solid #d7e6df;
+  background: rgba(255, 255, 255, .82);
+  color: #225744;
+  padding: 11px 16px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.progress-back-button:hover {
+  background: #317568;
+  color: #fff;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  margin: 4px 0 0;
+  font-size: 22px;
+  letter-spacing: -.02em;
+}
+
+.section-heading p {
+  margin: 6px 0 0;
+  color: #788a83;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   OVERALL SUMMARY
+   ========================================================= */
+
+.progress-summary-section {
+  max-width: 1250px;
+  margin: 0 auto 34px;
+}
+
+.progress-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.progress-stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 21px;
+  background: #fff;
+  border: 1px solid #dfebe6;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(27, 74, 57, .055);
+}
+
+.progress-stat-icon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #e9f7f0;
+  color: #247457;
+}
+
+.progress-stat strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 23px;
+}
+
+.progress-stat p {
+  margin: 3px 0 0;
+  color: #87968f;
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   TWO EQUAL PILLARS
+   ========================================================= */
+
+.progress-pillars {
+  max-width: 1250px;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.progress-pillar {
+  min-width: 0;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #1c2420;
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(27, 74, 57, .07);
+}
+
+
+/* =========================================================
+   PILLAR HEADER
+   ========================================================= */
+
+.pillar-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #edf3f0;
+}
+
+.pillar-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #e9f7f0;
+  color: #237256;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.pillar-header h2 {
+  margin: 4px 0 5px;
+  font-size: 23px;
+  letter-spacing: -.025em;
+}
+
+.pillar-header p {
+  margin: 0;
+  color: #7d8e87;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   PILLAR METRICS
+   ========================================================= */
+
+.pillar-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.pillar-metric {
+  padding: 15px;
+  background: #e5f5ed;
+  border-radius: 14px;
+}
+
+.pillar-metric strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   INTERVIEW SKILLS
+   ========================================================= */
+
+.skill-breakdown {
+  padding-top: 4px;
+}
+
+.mini-section-title {
+  margin-bottom: 16px;
+}
+
+.skill-row {
+  margin-bottom: 16px;
+}
+
+.skill-row>div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.skill-row span {
+  font-size: 13px;
+  color: #536d63;
+}
+
+.skill-row strong {
+  font-size: 12px;
+  color: #28765a;
+}
+
+.skill-bar {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #e8f0ed;
+}
+
+.skill-bar div {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #28765a, #53ae87);
+}
+
+
+/* =========================================================
+   CODING DETAILS
+   ========================================================= */
+
+.coding-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.coding-detail-card {
+  padding: 18px;
+  border: 1px solid #e5efeb;
+  background: #f7faf9;
+  border-radius: 15px;
+}
+
+.coding-detail-card span {
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .11em;
+  color: #6c9182;
+}
+
+.coding-detail-card strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 25px;
+}
+
+.coding-detail-card p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #87968f;
+}
+
+
+/* =========================================================
+   CODING TOPICS
+   ========================================================= */
+
+.coding-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.coding-topic {
+  padding: 8px 11px;
+  border-radius: 9px;
+  background: #e9f7f0;
+  color: #28765a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.no-topics {
+  margin: 0;
+  color: #899890;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.progress-actions {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.progress-btn {
+  padding: 13px 19px;
+  margin-top:5%;
+  border-radius: 11px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.progress-btn {
+  border: none;
+  background: #194d3b;
+  color: #fff;
+}
+
+.progress-btn:hover {
+  background: #23674f;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+  .progress-page {
+    padding: 28px 4%;
+  }
+
+  .progress-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-summary-grid,
+  .insight-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .progress-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .progress-header h1 {
+    font-size: 26px;
+  }
+
+  .progress-back-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .progress-pillar {
+    padding: 21px;
+    border-radius: 19px;
+  }
+
+  .pillar-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .coding-details {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-actions {
+    flex-direction: column;
+  }
+
+  .progress-btn {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   PERFORMANCE SNAPSHOT
+   ========================================================= */
+
+.snapshot-grid {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.snapshot-top {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.snapshot-bottom {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: calc(66.666% - 5px);
+}
+
+.snapshot-card,
+.snapshot-total-card {
+  background: #fff;
+  border: 2px solid #5db88e5f;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(27, 74, 57, 0.509);
+}
+
+.snapshot-card {
+  min-height: 105px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.snapshot-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #e9f7f0;
+  color: #28765a;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.snapshot-card h3 {
+  margin: 5px 0 3px;
+  font-size: 23px;
+  color: #17352b;
+}
+
+.snapshot-card p,
+.snapshot-total-card p {
+  margin: 0;
+  color: #87968f;
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   SNAPSHOT TOTALS
+   ========================================================= */
+
+.snapshot-totals {
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 0;
+}
+
+.snapshot-total-card {
+  padding: 20px 22px;
+}
+
+.snapshot-total-card span {
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  color: #60917d;
+}
+
+.snapshot-total-card strong {
+  display: block;
+  margin: 5px 0 2px;
+  font-size: 28px;
+  color: #194d3b;
+}
+
+
+/* =========================================================
+   SNAPSHOT RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+  .snapshot-top {
+    grid-template-columns: 1fr;
+  }
+
+  .snapshot-bottom {
+    max-width: none;
+    grid-template-columns: 1fr;
+  }
+
+  .snapshot-totals {
+    grid-template-columns: 1fr;
+  }
+}
